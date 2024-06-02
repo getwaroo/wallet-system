@@ -1,0 +1,29 @@
+syntax = "proto3";
+
+option java_package = "com.example.wallet";
+option java_outer_classname = "WalletProto";
+option java_multiple_files = true;
+
+service WalletService {
+  rpc CreditWallet(CreditRequest) returns (CreditResponse);
+  rpc GetBalance(BalanceRequest) returns (BalanceResponse);
+}
+
+message CreditRequest {
+  string id_number = 1;
+  double amount = 2;
+}
+
+message CreditResponse {
+  string status = 1;
+  string message = 2;
+}
+
+message BalanceRequest {
+  string id_number = 1;
+}
+
+message BalanceResponse {
+  string userId = 1;
+  double balance = 2;
+}
